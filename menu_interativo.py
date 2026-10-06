@@ -1,25 +1,31 @@
+import funcoes
+import sys
+
 while True:
     print("=======================================")
     print("           MENU DE INTERAÇÃO          ")
     print("=======================================")
 
-    print("opção 1: maior e menor entre 10 números")
-    print("-----------------------------------------")
-    print("opção 2: lista de pares e impares")
-    print("-----------------------------------------")
-    print("opção 3: ler 8 números e verificar se o numero pedido existe na lista")
-    print("-----------------------------------------")
-    print("opção 4: ler 10 números e pedir ao usuario para remover algum numero da lista")
-    print("-----------------------------------------")
-    print("opção 5: ler 20 números e contar qunatos são positivos, negativos e zeros")
-    print("-----------------------------------------")
-    print("opção 6: criar duas listas e informar quais valores estão presentes em ambas as listas e quais valores estão presentes apenas em uma das listas")
-    print("-----------------------------------------")
-    print("opção 7: cadastrar nome, preço e quantidade de 5 produtos e depois mostrar o produto mais caro e o que tem quantidade abaixo de 10")
-    print("-----------------------------------------")    
-    print("opção 8: ler 12 números e armazene-os em uma lista, exiba os números em ordem crescente e decrescente, informe quantos números são pares e quantos são ímpares")
+    print("1 - maior e menor entre 10 números")
+    print()
+    print("2 - lista de pares e impares")
+    print()
+    print("3 - ler 8 números e verificar se o numero pedido existe na lista")
+    print()
+    print("4 - ler 10 números e pedir ao usuario para remover algum numero da lista")
+    print()
+    print("5 - ler 20 números e contar qunatos são positivos, negativos e zeros")
+    print()
+    print("6 - criar duas listas e informar quais valores estão presentes em ambas as listas e quais valores estão presentes apenas em uma das listas")
+    print()
+    print("7 - cadastrar nome, preço e quantidade de 5 produtos e depois mostrar o produto mais caro e o que tem quantidade abaixo de 10")
+    print()
+    print("8 - ler 12 números e armazene-os em uma lista, exiba os números em ordem crescente e decrescente, informe quantos números são pares e quantos são ímpares")
+    print()
+    print("0 - sair")
     print("-----------------------------------------")
     print("\n")
+
     opcao = int(input("Digite a opção desejada: "))
 
     #casos do menu
@@ -161,15 +167,10 @@ while True:
             print(f"lista em ordem decrescente {lista3.sort(reverse=True)}")
             print(f"quantidade de números pares {contador_par}")
             print(f"quantidade de números impares {contador_impar}")
-    
-    #continuar
-    continuar = input("quer continuar? [S/N]").upper().strip()
-    if continuar == 'N':
-        break
-    elif continuar != "S":
-        while True:
-            continuar = input("quer continuar? [S/N] ").upper().strip()
-            if 'S' in continuar or 'N' in continuar:
-                break
-    if 'N' in continuar:
-        break    
+
+        case 0:
+            break
+
+        case _:
+            print("opção invalida")
+
