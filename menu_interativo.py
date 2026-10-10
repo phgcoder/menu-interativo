@@ -31,13 +31,9 @@ while True:
     #casos do menu
     match opcao:
         case 1:
-            numeros = []
             for i in range(1, 11):
-                numeros.append(int(input(f"digite o numero {i}: ")))
-
-            print(f"os números digitados foram {numeros}")
-            print(f"o maior valor da lista é {max(numeros)}")
-            print(f"o menor valor da lista é {min(numeros)}")
+                    print(f"digite o número {i}: ", end='')
+                    funcoes.maior_menor()
         
         case 2:
             lista_par = []
